@@ -1,1 +1,1 @@
-# graphQL-hackathon-
+# graphQL-hackathon
