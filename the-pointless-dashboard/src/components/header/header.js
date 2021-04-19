@@ -6,10 +6,10 @@ export default function Header() {
     <>
       <nav className="navbar">
         <div className="container-fluid">
-          <span className="navbar-brand mb-0 h1 fs-6">
+          <h5 className="navbar-brand mb-0 h1">
             <span className="emoji mx-3" >&#128021;</span>
             The Pointless Dashboard
-          </span>
+          </h5>
         </div>
       </nav>
     </>
