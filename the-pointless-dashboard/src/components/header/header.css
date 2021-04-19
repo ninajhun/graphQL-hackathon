@@ -1,4 +1,7 @@
 .navbar span {
   color: red !important;
-  /* font-size: 1.125rem; */
+}
+
+.navbar {
+  background-color: whitesmoke;
 }
