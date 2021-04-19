@@ -4,7 +4,7 @@ import "./widgets.css";
 export default function CoffeeWidget() {
   return (
     <>
-      <div className="card col-6">
+      <div className="card col-lg-5 col-md-5 col-sm-12 m-2" >
         <div class="card-body text-start">
           <h6 class="card-title ">
             Want a cup of coffee? <span class="emoji">&#9749;</span>

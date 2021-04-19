@@ -6,7 +6,7 @@ export default function Dashboard() {
   return (
     <>
       <Header />
-      <div class="container mt-5">
+      <div class="container mt-5 d-flex justify-content-center flex-wrap">
         {/* PLACE WIDGETS HERE */}
         <CoffeeWidget />
       </div>
