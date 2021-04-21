@@ -17,6 +17,9 @@ export default function Dashboard() {
 
     getIp();
   }, []);
+
+  //YOU CAN PASS ip AS PROPS NOW!!!!!
+
   return (
     <>
       <Header />

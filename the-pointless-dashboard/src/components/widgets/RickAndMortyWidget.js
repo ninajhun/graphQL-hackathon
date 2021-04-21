@@ -47,8 +47,6 @@ export default function RickAndMortyWidget() {
     }
   }, [rickAndAndMortyData]);
 
-  console.log(randomCharacter);
-
   return (
     <>
       <div className="card col-lg-5 col-md-5 col-sm-12 m-2">
