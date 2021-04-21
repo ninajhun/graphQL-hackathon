@@ -1,0 +1,7 @@
+.emoji-large {
+  font-size: 8rem;
+}
+
+.container-fluid:nth-child(odd) {
+  background-color: whitesmoke;
+}
