@@ -1,0 +1,55 @@
+.emoji-large {
+  font-size: 8rem;
+}
+
+.container-fluid:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+.icon {
+  width: 50px;
+}
+
+.click-app:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(43, 42, 42);
+}
+
+.thumbnail {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+a {
+  color: red;
+}
+
+/* iPhone X */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .emoji-large {
+    font-size: 3rem !important;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .emoji-large {
+    font-size: 3rem !important;
+  }
+
+  img.icon {
+    display: none;
+  }
+}
