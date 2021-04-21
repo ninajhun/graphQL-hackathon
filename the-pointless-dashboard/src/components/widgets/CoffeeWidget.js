@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./widgets.css";
 import { useQuery } from "@apollo/client";
 import { GET_COFFEE_QUERY } from "../../queries/getCoffeeShops.js";
 
 export default function CoffeeWidget(props) {
   const { ip } = props;
-
   const { data, loading, error } = useQuery(GET_COFFEE_QUERY, {
     variables: { ip },
   });
 
-  const coffeeShops = data?.getCoffeeShops;
+  const [coffeeShops, setCoffeeShops] = useState(null);
 
-  if (loading) return <p>Almost there...</p>;
+  useEffect(() => {
+    if (data) {
+      setCoffeeShops(data.location.coffeeShops);
+    }
+  }, [data]);
+
+  if (loading) return <p>Roasting your coffee beans still...</p>;
   if (error) return <p>{error.message}</p>;
-
-  console.log(coffeeShops);
 
   return (
     <>
@@ -26,7 +29,17 @@ export default function CoffeeWidget(props) {
           </h6>
           <div className="card-text">
             <p>Yelp found these coffee shops nearby:</p>
-            <div className="container">{/* yelp info */}</div>
+            <div className="container">
+              {!coffeeShops
+                ? null
+                : coffeeShops.map((coffeeShop) => {
+                    return (
+                      <>
+                        <h1>{coffeeShop.name}</h1>
+                      </>
+                    );
+                  })}
+            </div>
           </div>
         </div>
       </div>
