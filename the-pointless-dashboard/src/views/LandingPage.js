@@ -59,10 +59,10 @@ export default function LandingPage() {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/nina.jpg" className="thumbnail"></img>
-            <h6 className="mt-1">Nina</h6>
+            <img src="/img/jerry.jpeg" className="thumbnail"></img>
+            <h6 className="mt-1">Jerry</h6>
             <a
-              href="https://github.com/ninajhun"
+              href="https://github.com/jerryong89"
               target="_blank"
               rel="noreferrer"
             >
@@ -78,7 +78,7 @@ export default function LandingPage() {
             <span> </span>
 
             <a
-              href="https://www.linkedin.com/in/ninajhunjhnuwala/"
+              href="https://www.linkedin.com/in/jerryong89/"
               target="_blank"
               rel="noreferrer"
             >
@@ -94,10 +94,10 @@ export default function LandingPage() {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/nina.jpg" className="thumbnail"></img>
-            <h6 className="mt-1">Nina</h6>
+            <img src="/img/chris.jpeg" className="thumbnail"></img>
+            <h6 className="mt-1">Chris</h6>
             <a
-              href="https://github.com/ninajhun"
+              href="https://github.com/ChrisGitmed"
               target="_blank"
               rel="noreferrer"
             >
@@ -113,7 +113,7 @@ export default function LandingPage() {
             <span> </span>
 
             <a
-              href="https://www.linkedin.com/in/ninajhunjhnuwala/"
+              href="https://www.linkedin.com/in/christopher-gitmed/"
               target="_blank"
               rel="noreferrer"
             >
@@ -139,17 +139,23 @@ export default function LandingPage() {
             thought the best way to learn GraphQL was to just make as many API
             queries as possible so we could practice! The result is this
             pointless dashboard that we hope puts a smile on your face or even
-            gets you laughing with its ridiculous memes and quotes. The next
-            section after the ATF is the Explainer section. This section
-            explains what the application does, how it works, and maybe even
-            some instructions for how to use it. This is important in order to
-            help guide a user through the process of using your application.
+            gets you laughing with its ridiculous memes and quotes.
+          </p>
+          <p className="text-start">
+            The next section after the ATF is the Explainer section. This
+            section explains what the application does, how it works, and maybe
+            even some instructions for how to use it. This is important in order
+            to help guide a user through the process of using your application.
           </p>
         </div>
       </div>
 
       <div className="container-fluid p-5">
         <h3>Technologies Used</h3>
+        <li>React</li>
+        <li>GraphQl</li>
+        <li>StepZen</li>
+        <li>BootStrap 4</li>
       </div>
 
       <div className="container-fluid p-5 d-flex align-items-end">
@@ -160,8 +166,15 @@ export default function LandingPage() {
 
         <div className="col-10">
           <h5 style={{ color: "red" }}>
-            Thank you to MintBean and StepZen for hosting the hackathon that
-            inspired this project!
+            Thank you to{" "}
+            <a href="https://mintbean.io/" target="_blank" rel="noreferrer">
+              MintBean
+            </a>{" "}
+            and{" "}
+            <a href="https://stepzen.com/" target="_blank" rel="noreferrer">
+              StepZen
+            </a>{" "}
+            for hosting the hackathon that inspired this project!
           </h5>
         </div>
         <div className="col-1">
