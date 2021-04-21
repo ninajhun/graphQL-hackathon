@@ -10,6 +10,21 @@ export default function LandingPage() {
         <h6>The last dashboard you'll NEVER need...</h6>
         <h6 className="mb-5">(unless you're feeling bored)</h6>
       </div>
+
+      <div className="container-fluid p-5" style={{ color: "red" }}>
+        <h2 className="click-app">
+          <span>
+            <img src="/img/arrow.png" className="icon"></img>
+          </span>{" "}
+          Click here to check it out!
+        </h2>
+      </div>
+
+      <div className="container-fluid p-5">
+        <div className="col-lg-4">
+          <h6>Nina</h6>
+        </div>
+      </div>
     </>
   );
 }

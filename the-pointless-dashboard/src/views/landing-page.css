@@ -5,3 +5,13 @@
 .container-fluid:nth-child(odd) {
   background-color: whitesmoke;
 }
+
+.icon {
+  width: 50px;
+}
+
+.click-app:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(43, 42, 42);
+}
