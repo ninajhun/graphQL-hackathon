@@ -29,3 +29,27 @@
 a {
   color: red;
 }
+
+/* iPhone X */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .emoji-large {
+    font-size: 3rem !important;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .emoji-large {
+    font-size: 3rem !important;
+  }
+
+  img.icon {
+    display: none;
+  }
+}

@@ -130,11 +130,11 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="container-fluid p-5 d-flex justify-content-around ">
-        <div className="col-lg-7">
+      <div className="container-fluid p-5 d-flex justify-content-around flex-wrap">
+        <div className="col-lg-7  col-md-7 col-sm-12">
           <img className="img-thumbnail" src="/img/preview.png" alt="..."></img>
         </div>
-        <div className="col-lg-4 ml-3">
+        <div className="col-lg-4 col-md-7 col-sm-12 ml-3">
           <h3>About the The Pointless Dashboard App!</h3>
           <p className="text-start">
             This application was created for the MintBean GraphQL hackathon. We
