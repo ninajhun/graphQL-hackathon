@@ -1,7 +1,18 @@
 type HelloWorld @mock {
-   message: String! @mockfn(name: "List", values: ["Hello, world!"])
+  message: String! @mockfn(name: "List", values: ["Hello, world!"])
 }
 
 type Query {
-   helloWorld: HelloWorld
+  helloWorld: HelloWorld
+}
+
+schema
+  @sdl(
+    files: [
+      "ip-api/locationIpApi.graphql"
+      "openweathermap/weather-report-owm.graphql"
+      "yelpCoffeeShops.graphql"
+    ]
+  ) {
+  query: Query
 }

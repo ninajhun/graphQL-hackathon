@@ -1,0 +1,18 @@
+type YelpCoffeeShops {
+  image_url: String
+  name: String
+  url: String
+}
+
+type Query {
+  coffeeShops(latitude: Float!, longitude: Float!): [YelpCoffeeShops]
+    @rest(
+      endpoint: "https://api.yelp.com/v3/businesses/search?latitude=$latitude&longitude=$longitude&categories=coffeeroasteries&limit=3"
+      setters: [
+        { field: "name", path: "businesses[].name" }
+        { field: "url", path: "businesses[].url" }
+        { field: "image_url", path: "businesses[].image_url" }
+      ]
+      configuration: "Yelp_config"
+    )
+}
