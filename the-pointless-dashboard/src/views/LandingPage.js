@@ -20,7 +20,7 @@ export default function LandingPage() {
         </h2>
       </div>
 
-      <div className="container-fluid">
+      <div className="container-fluid p-5">
         <h6 className="p-5">Created by...</h6>
         <div className="d-flex justify-content-center flex-wrap ">
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
@@ -127,6 +127,45 @@ export default function LandingPage() {
               </svg>
             </a>
           </div>
+        </div>
+      </div>
+
+      <div className="container-fluid p-5">
+        <div className="col-lg-7"></div>
+        <div className="col-lg-5">
+          <h3>About the The Pointless Dashboard App!</h3>
+          <p className="text-start">
+            This application was created for the MintBean GraphQL hackathon. We
+            thought the best way to learn GraphQL was to just make as many API
+            queries as possible so we could practice! The result is this
+            pointless dashboard that we hope puts a smile on your face or even
+            gets you laughing with its ridiculous memes and quotes. The next
+            section after the ATF is the Explainer section. This section
+            explains what the application does, how it works, and maybe even
+            some instructions for how to use it. This is important in order to
+            help guide a user through the process of using your application.
+          </p>
+        </div>
+      </div>
+
+      <div className="container-fluid p-5">
+        <h3>Technologies Used</h3>
+      </div>
+
+      <div className="container-fluid p-5 d-flex align-items-end">
+        <div className="col-1">
+          {" "}
+          <span className="emoji"> &#128588;</span>
+        </div>
+
+        <div className="col-10">
+          <h5 style={{ color: "red" }}>
+            Thank you to MintBean and StepZen for hosting the hackathon that
+            inspired this project!
+          </h5>
+        </div>
+        <div className="col-1">
+          <span className="emoji"> &#128588;</span>
         </div>
       </div>
     </>

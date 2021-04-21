@@ -21,3 +21,7 @@
   width: 200px;
   object-fit: cover;
 }
+
+.emoji {
+  font-size: 3rem;
+}
