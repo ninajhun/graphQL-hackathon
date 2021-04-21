@@ -154,10 +154,11 @@ export default function LandingPage() {
 
       <div className="container-fluid p-5">
         <h3>Technologies Used</h3>
-        <li>React</li>
+        <li>React.js</li>
         <li>GraphQL</li>
         <li>StepZen</li>
         <li>BootStrap 4</li>
+        <li>CSS</li>
       </div>
 
       <div className="container-fluid p-5 d-flex align-items-end">
