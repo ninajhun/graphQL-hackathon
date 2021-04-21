@@ -130,9 +130,11 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="container-fluid p-5">
-        <div className="col-lg-7"></div>
-        <div className="col-lg-5">
+      <div className="container-fluid p-5 d-flex justify-content-around ">
+        <div className="col-lg-7">
+          <img className="img-thumbnail" src="/img/preview.png" alt="..."></img>
+        </div>
+        <div className="col-lg-4 ml-3">
           <h3>About the The Pointless Dashboard App!</h3>
           <p className="text-start">
             This application was created for the MintBean GraphQL hackathon. We
@@ -141,19 +143,19 @@ export default function LandingPage() {
             pointless dashboard that we hope puts a smile on your face or even
             gets you laughing with its ridiculous memes and quotes.
           </p>
-          <p className="text-start">
+          {/* <p className="text-start">
             The next section after the ATF is the Explainer section. This
             section explains what the application does, how it works, and maybe
             even some instructions for how to use it. This is important in order
             to help guide a user through the process of using your application.
-          </p>
+          </p> */}
         </div>
       </div>
 
       <div className="container-fluid p-5">
         <h3>Technologies Used</h3>
         <li>React</li>
-        <li>GraphQl</li>
+        <li>GraphQL</li>
         <li>StepZen</li>
         <li>BootStrap 4</li>
       </div>

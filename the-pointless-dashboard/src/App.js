@@ -1,7 +1,7 @@
 // import HelloWorld from './HelloWorld';
 import "./App.css";
 import Dashboard from "./views/Dashboard";
-import LandingPage from "./views/LandingPage";
+import LandingPage from "./views/landing-page/LandingPage";
 
 function App() {
   return (
