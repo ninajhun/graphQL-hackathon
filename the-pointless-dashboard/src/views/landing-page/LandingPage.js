@@ -14,7 +14,7 @@ export default function LandingPage() {
       <div className="container-fluid p-5" style={{ color: "red" }}>
         <h2 className="click-app">
           <span>
-            <img src="/img/arrow.png" className="icon"></img>
+            <img src="/img/arrow.png" className="icon-landing"></img>
           </span>{" "}
           Click here to check it out!
         </h2>
@@ -24,7 +24,7 @@ export default function LandingPage() {
         <h6 className="p-5">Created by...</h6>
         <div className="d-flex justify-content-center flex-wrap ">
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/nina.jpg" className="thumbnail"></img>
+            <img src="/img/nina.jpg" className="thumbnail-landing"></img>
             <h6 className="mt-1">Nina</h6>
             <a
               href="https://github.com/ninajhun"
@@ -59,7 +59,7 @@ export default function LandingPage() {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/jerry.jpeg" className="thumbnail"></img>
+            <img src="/img/jerry.jpeg" className="thumbnail-landing"></img>
             <h6 className="mt-1">Jerry</h6>
             <a
               href="https://github.com/jerryong89"
@@ -94,7 +94,7 @@ export default function LandingPage() {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/chris.jpeg" className="thumbnail"></img>
+            <img src="/img/chris.jpeg" className="thumbnail-landing"></img>
             <h6 className="mt-1">Chris</h6>
             <a
               href="https://github.com/ChrisGitmed"
@@ -132,7 +132,11 @@ export default function LandingPage() {
 
       <div className="container-fluid p-5 d-flex justify-content-around flex-wrap">
         <div className="col-lg-7  col-md-7 col-sm-12">
-          <img className="img-thumbnail" src="/img/preview.png" alt="..."></img>
+          <img
+            className="img-thumbnail-landing"
+            src="/img/preview.png"
+            alt="..."
+          ></img>
         </div>
         <div className="col-lg-4 col-md-7 col-sm-12 ml-3">
           <h3>About the The Pointless Dashboard App!</h3>
@@ -164,7 +168,7 @@ export default function LandingPage() {
       <div className="container-fluid p-5 d-flex align-items-end">
         <div className="col-1">
           {" "}
-          <span className="emoji"> &#128588;</span>
+          <span className="emoji-landing"> &#128588;</span>
         </div>
 
         <div className="col-10">
@@ -181,7 +185,7 @@ export default function LandingPage() {
           </h5>
         </div>
         <div className="col-1">
-          <span className="emoji"> &#128588;</span>
+          <span className="emoji-landing"> &#128588;</span>
         </div>
       </div>
     </>
