@@ -1,7 +1,12 @@
 import React from "react";
 import "./landing-page.css";
 
-export default function LandingPage() {
+export default function LandingPage(props) {
+  const {setView} = props
+  function changeView() {
+    setView("dashBoard")
+  }
+
   return (
     <>
       <div className="container-fluid p-5">
@@ -12,7 +17,7 @@ export default function LandingPage() {
       </div>
 
       <div className="container-fluid p-5" style={{ color: "red" }}>
-        <h2 className="click-app">
+        <h2 onClick={changeView} className="click-app">
           <span>
             <img src="/img/arrow.png" className="icon-landing"></img>
           </span>{" "}
