@@ -3,8 +3,12 @@ import "./widgets.css";
 import { useQuery } from "@apollo/client";
 import { GET_COFFEE_QUERY } from "../../queries/getCoffeeShops.js";
 
-export default function CoffeeWidget() {
-  const { data, loading, error } = useQuery(GET_COFFEE_QUERY);
+export default function CoffeeWidget(props) {
+  const { ip } = props;
+
+  const { data, loading, error } = useQuery(GET_COFFEE_QUERY, {
+    variables: { ip },
+  });
 
   const coffeeShops = data?.getCoffeeShops;
 
