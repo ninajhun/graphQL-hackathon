@@ -1,0 +1,11 @@
+type YelpCoffeeShops {
+  latitude: Decimal!
+  longitude: Decimal!
+  categories: String
+  limit: Int
+}
+
+type Query {
+  coffeeShops(latitude: Decimal!, longitude: Decimal!): YelpCoffeeShops
+    @rest(endpoint: "https://api.yelp.com/v3/businesses/search")
+}
