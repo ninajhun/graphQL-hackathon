@@ -3,3 +3,12 @@
   border-radius: 40px;
   background-color: whitesmoke;
 }
+
+.thumbnail {
+  width: 90%;
+  height: 8rem;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+}

@@ -28,17 +28,23 @@ export default function CoffeeWidget(props) {
             Want a cup of coffee? <span className="emoji">&#9749;</span>
           </h6>
           <div className="card-text">
-            <p>Yelp found these coffee shops nearby:</p>
-            <div className="container">
+            <div className="container d-flex align-items-start justify-content-center">
               {!coffeeShops
                 ? null
-                : coffeeShops.map((coffeeShop) => {
-                    return (
-                      <>
-                        <h1>{coffeeShop.name}</h1>
-                      </>
-                    );
-                  })}
+                : coffeeShops.map((coffeeShop, index) => (
+                    <div key={index} className="col-4 ">
+                      {/* <div className="thumbnail-container"> */}
+                      <a href={coffeeShop.url} target="_blank" rel="noreferrer">
+                        <img
+                          src={coffeeShop.image_url}
+                          className="thumbnail"
+                          alt="..."
+                        ></img>
+                      </a>
+                      {/* </div> */}
+                      <p className="mt-2">{coffeeShop.name}</p>
+                    </div>
+                  ))}
             </div>
           </div>
         </div>
