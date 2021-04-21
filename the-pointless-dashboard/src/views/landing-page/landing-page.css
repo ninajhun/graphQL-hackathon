@@ -6,7 +6,7 @@
   background-color: whitesmoke;
 }
 
-.icon {
+.icon-landing {
   width: 50px;
 }
 
@@ -16,13 +16,13 @@
   color: rgb(43, 42, 42);
 }
 
-.thumbnail {
+.thumbnail-landing {
   height: 200px;
   width: 200px;
   object-fit: cover;
 }
 
-.emoji {
+.emoji-landing {
   font-size: 3rem;
 }
 
