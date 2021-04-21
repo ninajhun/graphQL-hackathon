@@ -49,9 +49,9 @@ export default function RickAndMortyWidget() {
 
   return (
     <>
-      <div className="card col-lg-5 col-md-5 col-sm-12 m-2">
+      <div className="card col-lg-4 col-md-5 col-sm-12 m-2">
         <div className="card-body text-start ">
-          <h6 className="card-title">
+          <h6 className="card-title mt-5">
             Here's a random Rick and Morty character for the sake of it{" "}
             <span className="emoji">&#128125;</span>
           </h6>
@@ -62,10 +62,13 @@ export default function RickAndMortyWidget() {
                   className="img-thumbnail"
                   src={randomCharacter.image}
                   alt="..."
+                  style={{ height: "200px", width: "200px" }}
                 />
                 <p>{randomCharacter.name}</p>
               </>
-            ) : null}
+            ) : (
+              <p>Searching the Galaxy for alien lifeforms...</p>
+            )}
 
             <div className="container">{}</div>
           </div>

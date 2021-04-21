@@ -6,7 +6,8 @@
 
 .thumbnail {
   width: 90%;
-  height: 8rem;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .thumbnail:hover {
