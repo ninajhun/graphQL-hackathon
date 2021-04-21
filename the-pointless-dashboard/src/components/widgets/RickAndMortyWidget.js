@@ -49,7 +49,7 @@ export default function RickAndMortyWidget() {
 
   return (
     <>
-      <div className="card col-lg-4 col-md-5 col-sm-12 m-2">
+      <div className="card col-lg-4 col-md-4 col-sm-12 m-2">
         <div className="card-body text-start ">
           <h6 className="card-title mt-5">
             Here's a random Rick and Morty character for the sake of it{" "}
