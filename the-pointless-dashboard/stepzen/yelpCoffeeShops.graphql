@@ -1,11 +1,14 @@
 type YelpCoffeeShops {
-  latitude: Decimal!
-  longitude: Decimal!
+  latitude: Float!
+  longitude: Float!
   categories: String
   limit: Int
 }
 
 type Query {
-  coffeeShops(latitude: Decimal!, longitude: Decimal!): YelpCoffeeShops
-    @rest(endpoint: "https://api.yelp.com/v3/businesses/search")
+  coffeeShops(latitude: Float!, longitude: Float!): YelpCoffeeShops
+    @rest(
+      endpoint: "https://api.yelp.com/v3/businesses/search"
+      configuration: "yelp_fusion"
+    )
 }
