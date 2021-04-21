@@ -5,14 +5,9 @@ type YelpCoffeeShops {
 }
 
 type Query {
-  coffeeShops(
-    latitude: Float!
-    longitude: Float!
-    categories: String!
-    limit: Int!
-  ): [YelpCoffeeShops]
+  coffeeShops(latitude: Float!, longitude: Float!): [YelpCoffeeShops]
     @rest(
-      endpoint: "https://api.yelp.com/v3/businesses/search?latitude=$latitude&longitude=$longitude&categories=$categories&limit=$limit"
+      endpoint: "https://api.yelp.com/v3/businesses/search?latitude=$latitude&longitude=$longitude&categories=coffee&limit=3"
       setters: [
         { field: "name", path: "businesses[].name" }
         { field: "url", path: "businesses[].url" }
