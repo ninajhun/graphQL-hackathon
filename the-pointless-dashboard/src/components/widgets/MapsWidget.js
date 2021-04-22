@@ -15,7 +15,6 @@ export default function MapsWidget(props) {
 
   useEffect(() => {
     if (data) {
-      console.log('data: ', data)
       setLongitude(data.location.longitude);
       setLatitude(data.location.latitude);
     }
