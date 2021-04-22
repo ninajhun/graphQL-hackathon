@@ -2,36 +2,16 @@ import React, { useState, useEffect } from "react";
 import { GraphQLClient, gql } from "graphql-request";
 import "./widgets.css";
 
-var request = new XMLHttpRequest();
-
-request.open('GET', 'https://api.ipdata.co/?api-key=cda08130f429c0d25ad19cb3b2e8646a0e776a4e0fba16cdb87d6321');
-
-request.setRequestHeader('Accept', 'application/json');
-
-request.onreadystatechange = function () {
-  if (this.readyState === 4) {
-    console.log(this.responseText);
-  }
-};
-
-request.send();
-
 function Weather() {
   const [token, setToken] = useState("");
 
   useEffect(() => {
-    // You need to restrict it at some point
-    // This is just dummy code and should be replaced by actual
     if (!token) {
       getToken();
     }
   }, []);
 
   const getToken = async () => {
-        let myIp = await fetch('http://api.ipify.org/?format=json')
-      .then(res => res.json())
-
-    console.log("this is ip", myIp)
     const endpoint =
       "https://BriskSharkHands.stepzen.net/api/ideal-bobcat/__graphql";
     const graphQLClient = new GraphQLClient(endpoint, {
@@ -61,7 +41,6 @@ function Weather() {
     `;
     const data = await graphQLClient.request(query);
     setToken(data);
-    console.log(data);
   };
   if (!token) return null;
 
