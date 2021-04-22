@@ -23,11 +23,9 @@ export default function MapsWidget(props) {
 
   return (
     <>
-      <div className="card col-lg-10 col-md-10 col-sm-12 my-2 " >
+      <div className="card col-lg-10 col-md-10 col-sm-12 my-2 p-5 ">
         <div className="card-body text-start">
-          <h6 className="card-title ">
-            I see you...
-         </h6>
+          <h6 className="card-title ">I see you...</h6>
 
           <iframe
             title="map"
