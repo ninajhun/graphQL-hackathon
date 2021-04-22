@@ -37,13 +37,13 @@ export default function Quotes() {
 
   return (
     <>
-      <div className="card col-lg-4 col-md-4 col-sm-12 m-2 p-3">
+      <div className="card col-lg-6 col-md-6 col-sm-12 m-2 p-3">
         <div className="card-body text-start ">
           <h6 className="card-title mt-5">
             Sick of inspirational quotes? Well, here's a programming one.
             <span className="emoji">&#9997;</span>
           </h6>
-          <p>{data}</p>
+          <p className="text-center">{data}</p>
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./widgets.css";
 import { useQuery } from "@apollo/client";
-import { GET_LOCATION_QUERY } from '../../queries/getLocation'
+import { GET_LOCATION_QUERY } from "../../queries/getLocation";
 
 export default function MapsWidget(props) {
   const { ip } = props;
@@ -12,7 +12,6 @@ export default function MapsWidget(props) {
   const [longitude, setLongitude] = useState(null);
   const [latitude, setLatitude] = useState(null);
 
-
   useEffect(() => {
     if (data) {
       setLongitude(data.location.longitude);
@@ -20,7 +19,7 @@ export default function MapsWidget(props) {
     }
   }, [data]);
 
-  if (error) return <p>{error.message}</p>
+  if (error) return <p>{error.message}</p>;
 
   return (
     <>
@@ -29,15 +28,16 @@ export default function MapsWidget(props) {
           <h6 className="card-title ">
             I see you...
          </h6>
+
           <iframe
-            title='map'
+            title="map"
             style={{
-              'width': '100%',
-              'height': '80%',
+              width: "100%",
+              height: "90%",
             }}
             src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDGH75fWG7ixeoQpr3Jhz3BoIL8TVOE3gQ
-                &q=${latitude},${longitude}`}>
-          </iframe>
+                &q=${latitude},${longitude}`}
+          ></iframe>
         </div>
       </div>
     </>
