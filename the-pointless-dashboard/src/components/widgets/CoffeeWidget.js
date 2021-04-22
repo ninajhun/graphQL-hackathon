@@ -24,7 +24,8 @@ export default function CoffeeWidget(props) {
       <div className="card col-lg-6 col-md-6 col-sm-12 m-2">
         <div className="card-body text-start">
           <h6 className="card-title mt-5">
-            Want a cup of coffee? <span className="emoji">&#9749;</span>
+            Feeling sleepy? I got you covered.{" "}
+            <span className="emoji">&#9749;</span>
           </h6>
           <div className="card-text">
             <div className="container ">

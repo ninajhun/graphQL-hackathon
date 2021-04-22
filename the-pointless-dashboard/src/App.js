@@ -5,17 +5,17 @@ import LandingPage from "./views/landing-page/LandingPage";
 import React, { useState } from "react";
 
 function App() {
-  const [view, setView] = useState("landingPage")
+  const [view, setView] = useState("landingPage");
 
   if (view === "landingPage") {
     return (
-    <div className="App">
-      <LandingPage setView={setView} />
-    </div>
+      <div className="App">
+        <LandingPage setView={setView} />
+      </div>
     );
   }
 
-  if (view ==="dashBoard") {
+  if (view === "dashBoard") {
     return (
       <div className="App">
         <Dashboard />

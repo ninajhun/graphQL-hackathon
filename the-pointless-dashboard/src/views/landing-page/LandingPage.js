@@ -2,9 +2,9 @@ import React from "react";
 import "./landing-page.css";
 
 export default function LandingPage(props) {
-  const {setView} = props
+  const { setView } = props;
   function changeView() {
-    setView("dashBoard")
+    setView("dashBoard");
   }
 
   return (
@@ -19,7 +19,7 @@ export default function LandingPage(props) {
       <div className="container-fluid p-5" style={{ color: "red" }}>
         <h2 onClick={changeView} className="click-app">
           <span>
-            <img src="/img/arrow.png" className="icon-landing"></img>
+            <img src="/img/arrow.png" className="icon-landing" alt="..."></img>
           </span>{" "}
           Click here to check it out!
         </h2>
@@ -29,7 +29,11 @@ export default function LandingPage(props) {
         <h6 className="p-5">Created by...</h6>
         <div className="d-flex justify-content-center flex-wrap ">
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/nina.jpg" className="thumbnail-landing"></img>
+            <img
+              src="/img/nina.jpg"
+              className="thumbnail-landing"
+              alt="..."
+            ></img>
             <h6 className="mt-1">Nina</h6>
             <a
               href="https://github.com/ninajhun"
@@ -64,7 +68,11 @@ export default function LandingPage(props) {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/jerry.jpeg" className="thumbnail-landing"></img>
+            <img
+              src="/img/jerry.jpeg"
+              className="thumbnail-landing"
+              alt="..."
+            ></img>
             <h6 className="mt-1">Jerry</h6>
             <a
               href="https://github.com/jerryong89"
@@ -99,7 +107,11 @@ export default function LandingPage(props) {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/chris.jpeg" className="thumbnail-landing"></img>
+            <img
+              src="/img/chris.jpeg"
+              className="thumbnail-landing"
+              alt="..."
+            ></img>
             <h6 className="mt-1">Chris</h6>
             <a
               href="https://github.com/ChrisGitmed"
@@ -135,10 +147,10 @@ export default function LandingPage(props) {
         </div>
       </div>
 
-      <div className="container-fluid p-5 d-flex justify-content-around flex-wrap">
+      <div className="container-fluid p-5 d-flex justify-content-around align-items-center flex-wrap">
         <div className="col-lg-7  col-md-7 col-sm-12">
           <img
-            className="img-thumbnail-landing"
+            className="img-landing img-thumbnail"
             src="/img/preview.png"
             alt="..."
           ></img>
@@ -146,18 +158,20 @@ export default function LandingPage(props) {
         <div className="col-lg-4 col-md-7 col-sm-12 ml-3">
           <h3>About the The Pointless Dashboard App!</h3>
           <p className="text-start">
-            This application was created for the MintBean GraphQL hackathon. We
-            thought the best way to learn GraphQL was to just make as many API
-            queries as possible so we could practice! The result is this
-            pointless dashboard that we hope puts a smile on your face or even
-            gets you laughing with its ridiculous memes and quotes.
+            This application was created for the MintBean GraphQL hackathon
+            (feat. the amazing team @ StepZen!). We thought the best way to
+            learn GraphQL was to just make as many API queries as possible so we
+            could practice! The result is this pointless dashboard that is well,
+            pointless... but if you're wondering where your next cup of coffee
+            is coming from or what's the weather is like in your area, we got
+            you!
           </p>
-          {/* <p className="text-start">
-            The next section after the ATF is the Explainer section. This
-            section explains what the application does, how it works, and maybe
-            even some instructions for how to use it. This is important in order
-            to help guide a user through the process of using your application.
-          </p> */}
+          <p className="text-start">
+            <strong>The nitty gritty:</strong> React.js and Bootstrap 4 was used
+            to create the front-end. StepZen converts our REST API endpoints
+            into GraphQL endpoints then we used GraphQL to query our APIs and
+            fetch the data necessary to populate our widgets.
+          </p>
         </div>
       </div>
 

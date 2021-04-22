@@ -30,6 +30,10 @@ a {
   color: red;
 }
 
+.img-landing {
+  width: 100%;
+}
+
 /* iPhone X */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
@@ -37,7 +41,7 @@ a {
     font-size: 3rem !important;
   }
 
-  .icon {
+  img.icon-landing {
     display: none;
   }
 }
@@ -49,7 +53,7 @@ a {
     font-size: 3rem !important;
   }
 
-  img.icon {
+  img.icon-landing {
     display: none;
   }
 }

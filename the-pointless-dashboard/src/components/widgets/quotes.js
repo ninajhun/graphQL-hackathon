@@ -23,7 +23,6 @@ const grabQuotes = async () => {
   return data;
 };
 
-
 export default function Quotes() {
   const [data, setData] = useState("");
   function getRandomInt(max) {
@@ -32,21 +31,22 @@ export default function Quotes() {
   useEffect(() => {
     const data = grabQuotes();
     data.then((data) => {
-      console.log(data.data)
+      console.log(data.data);
       setData(data.data.quotesList[getRandomInt(342)].quote);
     });
   }, []);
 
   return (
     <>
-      <div className="card col-lg-4 col-md-4 col-sm-12 m-2">
+      <div className="card col-lg-4 col-md-4 col-sm-12 m-2 p-3">
         <div className="card-body text-start ">
           <h6 className="card-title mt-5">
-            Quote of the Day
+            Sick of inspirational quotes? Well, here's a programming one.
+            <span className="emoji">&#9997;</span>
           </h6>
           <p>{data}</p>
         </div>
       </div>
     </>
-  )
+  );
 }
