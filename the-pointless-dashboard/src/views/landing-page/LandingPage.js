@@ -19,7 +19,7 @@ export default function LandingPage(props) {
       <div className="container-fluid p-5" style={{ color: "red" }}>
         <h2 onClick={changeView} className="click-app">
           <span>
-            <img src="/img/arrow.png" className="icon-landing"></img>
+            <img src="/img/arrow.png" className="icon-landing" alt="..."></img>
           </span>{" "}
           Click here to check it out!
         </h2>
@@ -29,7 +29,11 @@ export default function LandingPage(props) {
         <h6 className="p-5">Created by...</h6>
         <div className="d-flex justify-content-center flex-wrap ">
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/nina.jpg" className="thumbnail-landing"></img>
+            <img
+              src="/img/nina.jpg"
+              className="thumbnail-landing"
+              alt="..."
+            ></img>
             <h6 className="mt-1">Nina</h6>
             <a
               href="https://github.com/ninajhun"
@@ -64,7 +68,11 @@ export default function LandingPage(props) {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/jerry.jpeg" className="thumbnail-landing"></img>
+            <img
+              src="/img/jerry.jpeg"
+              className="thumbnail-landing"
+              alt="..."
+            ></img>
             <h6 className="mt-1">Jerry</h6>
             <a
               href="https://github.com/jerryong89"
@@ -99,7 +107,11 @@ export default function LandingPage(props) {
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
-            <img src="/img/chris.jpeg" className="thumbnail-landing"></img>
+            <img
+              src="/img/chris.jpeg"
+              className="thumbnail-landing"
+              alt="..."
+            ></img>
             <h6 className="mt-1">Chris</h6>
             <a
               href="https://github.com/ChrisGitmed"
