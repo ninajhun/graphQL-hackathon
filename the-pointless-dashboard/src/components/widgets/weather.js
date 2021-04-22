@@ -28,7 +28,7 @@ export default function Weather(props) {
             {!token ? (
               <p>Checking The Weather</p>
             ) : (
-              <p>The temperature is {`${Math.floor((token.location.weather.temp * 9 / 5) + 32)}`}F and is {token.location.weather.description} in {token.location.city}</p>
+                <p>The temperature is {`${Math.floor((token.location.weather.temp * 9 / 5) + 32)}`}	°F and is {token.location.weather.description} in {token.location.city}</p>
             )}
           </div>
         </div>
