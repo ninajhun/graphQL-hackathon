@@ -19,7 +19,7 @@ export default function LandingPage(props) {
       <div className="container-fluid p-5" style={{ color: "red" }}>
         <h2 onClick={changeView} className="click-app">
           <span>
-            <img src="/img/arrow.png" className="icon-landing" alt="..."></img>
+            <img src="img/arrow.png" className="icon-landing" alt="..."></img>
           </span>{" "}
           Click here to check it out!
         </h2>
