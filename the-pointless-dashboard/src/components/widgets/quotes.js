@@ -40,12 +40,11 @@ export default function Quotes() {
       <div className="card col-lg-6 col-md-6 col-sm-12 m-2 p-3">
         <div className="card-body text-start ">
           <h6 className="card-title mt-5">
-            Sick of inspirational quotes? Well, here's a programming one.
-            <span className="emoji">&#9997;</span>
+            Quote of the Day
           </h6>
           <p className="text-center">{data}</p>
         </div>
       </div>
     </>
-  );
+  )
 }
