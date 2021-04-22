@@ -14,7 +14,6 @@ export default function MapsWidget(props) {
 
   useEffect(() => {
     if (data) {
-      console.log("data: ", data);
       setLongitude(data.location.longitude);
       setLatitude(data.location.latitude);
     }
@@ -24,9 +23,12 @@ export default function MapsWidget(props) {
 
   return (
     <>
-      <div className="card col-lg-10 col-md-10 col-sm-12 my-2 p-5">
-        <div class="card-body text-start">
-          <h6 class="card-title ">I see you...</h6>
+      <div className="card col-lg-10 col-md-10 col-sm-12 my-2 " >
+        <div className="card-body text-start">
+          <h6 className="card-title ">
+            I see you...
+         </h6>
+
           <iframe
             title="map"
             style={{

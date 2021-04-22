@@ -31,7 +31,6 @@ export default function Quotes() {
   useEffect(() => {
     const data = grabQuotes();
     data.then((data) => {
-      console.log(data.data);
       setData(data.data.quotesList[getRandomInt(342)].quote);
     });
   }, []);
