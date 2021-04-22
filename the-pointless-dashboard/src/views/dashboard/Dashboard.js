@@ -4,6 +4,7 @@ import CoffeeWidget from "../../components/widgets/CoffeeWidget";
 import RickAndMortyWidget from "../../components/widgets/RickAndMortyWidget";
 import publicIp from "public-ip";
 import Weather from '../../components/widgets/weather'
+import Quotes from '../../components/widgets/quotes'
 
 export default function Dashboard() {
   const [ipAddress, setIp] = useState("");
@@ -28,6 +29,7 @@ export default function Dashboard() {
         <CoffeeWidget ip={ipAddress} />
         <RickAndMortyWidget />
         <Weather/>
+        <Quotes/>
       </div>
     </>
   );
