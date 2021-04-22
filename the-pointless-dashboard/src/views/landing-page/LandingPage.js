@@ -138,7 +138,7 @@ export default function LandingPage(props) {
       <div className="container-fluid p-5 d-flex justify-content-around flex-wrap">
         <div className="col-lg-7  col-md-7 col-sm-12">
           <img
-            className="img-thumbnail-landing"
+            className="img-landing"
             src="/img/preview.png"
             alt="..."
           ></img>
