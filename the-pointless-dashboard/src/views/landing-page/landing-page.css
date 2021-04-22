@@ -41,7 +41,7 @@ a {
     font-size: 3rem !important;
   }
 
-  .icon {
+  img.icon-landing {
     display: none;
   }
 }
@@ -53,7 +53,7 @@ a {
     font-size: 3rem !important;
   }
 
-  img.icon {
+  img.icon-landing {
     display: none;
   }
 }
