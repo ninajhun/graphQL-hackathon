@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/graphQL-hackathon/static/css/main.44f0da18.chunk.css",
-    "main.js": "/graphQL-hackathon/static/js/main.bbdd2216.chunk.js",
-    "main.js.map": "/graphQL-hackathon/static/js/main.bbdd2216.chunk.js.map",
+    "main.js": "/graphQL-hackathon/static/js/main.00aea02e.chunk.js",
+    "main.js.map": "/graphQL-hackathon/static/js/main.00aea02e.chunk.js.map",
     "runtime-main.js": "/graphQL-hackathon/static/js/runtime-main.822daf7f.js",
     "runtime-main.js.map": "/graphQL-hackathon/static/js/runtime-main.822daf7f.js.map",
     "static/js/2.7791d815.chunk.js": "/graphQL-hackathon/static/js/2.7791d815.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.822daf7f.js",
     "static/js/2.7791d815.chunk.js",
     "static/css/main.44f0da18.chunk.css",
-    "static/js/main.bbdd2216.chunk.js"
+    "static/js/main.00aea02e.chunk.js"
   ]
 }
