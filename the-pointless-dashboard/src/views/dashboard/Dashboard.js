@@ -28,7 +28,7 @@ export default function Dashboard() {
         {/* PLACE WIDGETS HERE */}
         <CoffeeWidget ip={ipAddress} />
         <RickAndMortyWidget />
-        <Weather/>
+        <Weather ip={ipAddress}/>
         <Quotes/>
       </div>
     </>
