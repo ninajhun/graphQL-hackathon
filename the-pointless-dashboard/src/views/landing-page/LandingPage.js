@@ -19,7 +19,7 @@ export default function LandingPage(props) {
       <div className="container-fluid p-5" style={{ color: "red" }}>
         <h2 onClick={changeView} className="click-app">
           <span>
-            <img src="/img/arrow.png" className="icon-landing" alt="..."></img>
+            <img src="img/arrow.png" className="icon-landing" alt="..."></img>
           </span>{" "}
           Click here to check it out!
         </h2>
@@ -30,7 +30,7 @@ export default function LandingPage(props) {
         <div className="d-flex justify-content-center flex-wrap ">
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
             <img
-              src="/img/nina.jpg"
+              src="img/nina.jpg"
               className="thumbnail-landing"
               alt="..."
             ></img>
@@ -69,7 +69,7 @@ export default function LandingPage(props) {
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
             <img
-              src="/img/jerry.jpeg"
+              src="img/jerry.jpeg"
               className="thumbnail-landing"
               alt="..."
             ></img>
@@ -108,7 +108,7 @@ export default function LandingPage(props) {
 
           <div className="col-lg-3 col-md-3 col-sm-12 mb-5">
             <img
-              src="/img/chris.jpeg"
+              src="img/chris.jpeg"
               className="thumbnail-landing"
               alt="..."
             ></img>
@@ -151,7 +151,7 @@ export default function LandingPage(props) {
         <div className="col-lg-7  col-md-7 col-sm-12">
           <img
             className="img-landing img-thumbnail"
-            src="/img/preview.png"
+            src="img/preview.png"
             alt="..."
           ></img>
         </div>
