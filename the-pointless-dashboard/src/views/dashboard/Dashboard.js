@@ -25,7 +25,7 @@ export default function Dashboard() {
   return (
     <>
       <Header />
-      <div className="container-fluid mt-5 d-flex justify-content-center flex-wrap">
+      <div className="container-fluid mt-1 d-flex justify-content-center flex-wrap">
         {/* PLACE WIDGETS HERE */}
         <CoffeeWidget ip={ipAddress} />
         <RickAndMortyWidget />

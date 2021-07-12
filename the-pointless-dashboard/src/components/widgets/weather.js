@@ -19,9 +19,9 @@ export default function Weather(props) {
   if (error) return <p>{error.message}</p>;
   return (
     <>
-      <div className="card col-lg-4 col-md-4 col-sm-12 m-2">
+      <div className="card col-lg-5 col-md-4 col-sm-12 m-1">
         <div className="card-body text-start ">
-          <h6 className="card-title mt-5">
+          <h6 className="card-title  cardTitle">
             So, how about that weather huh?
             <span className="emoji">&#127782;</span>
           </h6>
@@ -31,7 +31,7 @@ export default function Weather(props) {
             ) : (
               <p className="text-center">
                 The temperature is{" "}
-                {`${Math.floor((token.location.weather.temp * 9) / 5 + 32)}`}F
+                  {`${Math.floor((token.location.weather.temp * 9) / 5 + 32)}`}F°
                 and is {token.location.weather.description} in{" "}
                 {token.location.city}!
               </p>

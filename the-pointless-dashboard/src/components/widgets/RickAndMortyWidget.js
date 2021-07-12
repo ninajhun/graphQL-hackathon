@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./widgets.css";
+import "./title.css"
 
 const fetchRickAndMorty = async () => {
   const data = await fetch("https://rickandmortyapi.com/graphql", {
@@ -51,7 +52,7 @@ export default function RickAndMortyWidget() {
     <>
       <div className="card col-lg-4 col-md-4 col-sm-12 m-2">
         <div className="card-body text-start ">
-          <h6 className="card-title mt-5">
+          <h6 className="card-title mt-2 cardTitle">
             Here's a random Rick and Morty character for the sake of it{" "}
             <span className="emoji">&#128125;</span>
           </h6>

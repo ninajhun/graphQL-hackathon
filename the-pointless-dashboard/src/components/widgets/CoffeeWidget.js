@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./widgets.css";
+import "./title.css"
+import "./coffee.css"
 import { useQuery } from "@apollo/client";
 import { GET_COFFEE_QUERY } from "../../queries/getCoffeeShops.js";
 
@@ -21,9 +23,9 @@ export default function CoffeeWidget(props) {
 
   return (
     <>
-      <div className="card col-lg-6 col-md-6 col-sm-12 m-2">
+      <div className="card col-lg-7 col-md-6 col-sm-12 m-2">
         <div className="card-body text-start">
-          <h6 className="card-title mt-5">
+          <h6 className="card-title mt-1 cardTitle">
             Feeling sleepy? I got you covered.{" "}
             <span className="emoji">&#9749;</span>
           </h6>
@@ -32,9 +34,9 @@ export default function CoffeeWidget(props) {
               {!coffeeShops ? (
                 <p> Roasting your coffee beans still... </p>
               ) : (
-                <div>
-                  <p className="mb-4">Yelp found these coffee shops nearby:</p>
-                  <div className="d-flex align-items-start justify-content-center ">
+                <div >
+                  <p className="mb-4 cardTitle">Yelp found these coffee shops nearby:</p>
+                  <div className="d-flex align-items-start justify-content-center coffeeContainer">
                     {coffeeShops.map((coffeeShop, index) => (
                       <div key={index} className="col-4">
                         <a
